@@ -1,4 +1,4 @@
-body {
+  body {
   background: #CDFFE2;
   color: #0025FF;
   font-family: "Figtree", serif;
@@ -17,6 +17,8 @@ hr {
 .navbar {
   padding: 10px;
   background: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
@@ -26,19 +28,29 @@ hr {
 .nav-links a {
   text-decoration: none;
   color: #0025FF;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 /* Practice: Equal-width cards */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;;
+}
 
 .card {
   background: lightblue;
   border: 2px solid #0025FF;
   padding: 20px;
+  flex: 1;
 }
 
 /* Codealong: Plan and code a card */
 .flex-container {
   display: flex;
+
 }
 
 .card-image {
@@ -49,6 +61,44 @@ hr {
 article {
   width: 375px;
   height: 500px;
-  background: white;
+  background: rgb(255, 255, 255);
   color: rgb(0, 24, 164);
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* the childs are pushed away from each others */
+  padding: 30px;
+  border-color: blue;
+  border-style: solid;
+  border-width: 16px 16px 2px 2px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.top-text p {
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 40px;
+ font-weight: 500;
+ margin-bottom: 0;
+}
+
+.preamble {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.button { 
+  background-color: blue;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }
